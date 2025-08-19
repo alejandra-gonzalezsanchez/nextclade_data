@@ -1,3 +1,0 @@
-# Example dataset for CV-A10
-
-To be continued ...
