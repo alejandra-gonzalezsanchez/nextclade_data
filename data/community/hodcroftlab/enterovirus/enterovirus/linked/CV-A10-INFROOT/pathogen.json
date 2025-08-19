@@ -1,11 +1,11 @@
 {
   "schemaVersion": "3.0.0",
   "files": {
-    "reference": "reference_CVA10INFROOT.fasta",
+    "reference": "reference-CVA10INFROOT.fasta",
     "pathogenJson": "pathogen.json",
     "genomeAnnotation": "genome_annotation.gff3",
-    "treeJson": "tree_CVA10INFROOT.json",
-    "examples": "sequences_CVA10INFROOT.fasta",
+    "treeJson": "tree-CVA10INFROOT.json",
+    "examples": "sequences-CVA10INFROOT.fasta",
     "readme": "README.md",
     "changelog": "CHANGELOG.md"
   },
