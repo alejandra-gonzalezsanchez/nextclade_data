@@ -31,7 +31,6 @@
         "web": "3.0.0"
   },
   "qc": {
-    "schemaVersion": "1.2.0",
     "frameShifts": {
       "enabled": true,
       "scoreWeight": 100
