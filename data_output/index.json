@@ -5058,15 +5058,31 @@
             "changelog": "CHANGELOG.md"
           },
           "capabilities": {
-            "clades": 8
+            "clades": 8,
+            "qc": [
+              "frameShifts",
+              "missingData",
+              "mixedSites",
+              "privateMutations",
+              "divergence",
+              "stopCodons"
+            ]
           },
           "versions": [
             {
-              "tag": "unreleased"
+              "tag": "unreleased",
+              "compatibility": {
+                "cli": "3.0.0",
+                "web": "3.0.0"
+              }
             }
           ],
           "version": {
-            "tag": "unreleased"
+            "tag": "unreleased",
+            "compatibility": {
+              "cli": "3.0.0",
+              "web": "3.0.0"
+            }
           }
         }
       ]
