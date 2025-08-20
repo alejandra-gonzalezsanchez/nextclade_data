@@ -4939,15 +4939,31 @@
             "changelog": "CHANGELOG.md"
           },
           "capabilities": {
-            "clades": 9
+            "clades": 9,
+            "qc": [
+              "frameShifts",
+              "missingData",
+              "mixedSites",
+              "privateMutations",
+              "divergence",
+              "stopCodons"
+            ]
           },
           "versions": [
             {
-              "tag": "unreleased"
+              "tag": "unreleased",
+              "compatibility": {
+                "cli": "3.0.0",
+                "web": "3.0.0"
+              }
             }
           ],
           "version": {
-            "tag": "unreleased"
+            "tag": "unreleased",
+            "compatibility": {
+              "cli": "3.0.0",
+              "web": "3.0.0"
+            }
           }
         },
         {
