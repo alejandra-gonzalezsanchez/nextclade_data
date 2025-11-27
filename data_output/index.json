@@ -4861,7 +4861,7 @@
           "path": "community/hodcroftlab/enterovirus/eva71",
           "enabled": true,
           "attributes": {
-            "name": "Enterovirus A71 virus",
+            "name": "Enterovirus A71",
             "reference name": "Human enterovirus 71 polyprotein gene, complete cds.",
             "reference accession": "U22521.1"
           },
@@ -4875,29 +4875,34 @@
             "changelog": "CHANGELOG.md"
           },
           "capabilities": {
-            "clades": 18,
+            "clades": 19,
             "qc": [
+              "frameShifts",
               "missingData",
               "mixedSites",
               "privateMutations",
               "divergence",
-              "stopCodons"
+              "stopCodons",
+              "recombinants"
+            ],
+            "other": [
+              "mutLabels"
             ]
           },
           "versions": [
             {
               "tag": "unreleased",
               "compatibility": {
-                "cli": "3.0.0-alpha.0",
-                "web": "3.0.0-alpha.0"
+                "cli": "3.0.0",
+                "web": "3.0.0"
               }
             }
           ],
           "version": {
             "tag": "unreleased",
             "compatibility": {
-              "cli": "3.0.0-alpha.0",
-              "web": "3.0.0-alpha.0"
+              "cli": "3.0.0",
+              "web": "3.0.0"
             }
           }
         },
