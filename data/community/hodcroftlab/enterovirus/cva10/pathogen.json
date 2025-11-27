@@ -1,4 +1,5 @@
 {
+  "$schema": "https://raw.githubusercontent.com/nextstrain/nextclade/refs/heads/release/packages/nextclade-schemas/input-pathogen-json.schema.json",
   "schemaVersion": "3.0.0",
   "files": {
     "reference": "reference.fasta",
@@ -15,45 +16,61 @@
     "reference accession": "AY421767.1"
   },
   "alignmentParams": {
+        "penalityGapExtend": 3,
         "penaltyGapOpen": 13,
         "penaltyGapOpenInFrame": 18,
         "penaltyGapOpenOutOfFrame": 23,
         "kmerLength": 6,
         "kmerDistance": 25,
         "minMatchLength": 30,
-        "allowedMismatches": 15,
-        "minLength": 30
+        "allowedMismatches": 10,
+        "minLength": 100,
+        "minSeedCover": 0.30
     },
   "defaultCds": "VP1",
   "compatibility": {
         "cli": "3.0.0-alpha.0",
         "web": "3.0.0-alpha.0"
     },
+  "mutLabels": {
+    "nucMutLabelMap": {
+      }
+    },    
   "qc": {
     "frameShifts": {
       "enabled": true,
-      "scoreWeight": 20
+      "scoreWeight": 100
     },
     "missingData": {
       "enabled": true,
-      "missingDataThreshold": 2000,
-      "scoreBias": 500
+      "missingDataThreshold": 500,
+      "scoreBias": 100
     },
     "mixedSites": {
       "enabled": true,
-      "mixedSitesThreshold": 40
+      "mixedSitesThreshold": 20
     },
     "privateMutations": {
-      "cutoff": 300,
+      "cutoff": 200,
       "enabled": true,
-      "typical": 250,
-      "weightLabeledSubstitutions": 1,
+      "typical": 100,
+      "weightLabeledSubstitutions": 1.5,
       "weightReversionSubstitutions": 2,
       "weightUnlabeledSubstitutions": 1
     },
     "stopCodons": {
       "enabled": true,
       "scoreWeight": 40
+    },
+    "divergence": {
+      "enabled": true,
+      "maxDivergence": 0.15,
+      "scoreWeight": 50
+    },
+    "recombinants": {
+      "enabled": true,
+      "mutationsThreshold": 140,
+      "scoreWeight": 50
     }
     },
   "cdsOrderPreference":["VP4", "VP2", "VP3", "VP1", "2A", "2B", "2C", "3A", "3B", "3C", "3D"]
