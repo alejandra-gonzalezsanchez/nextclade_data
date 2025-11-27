@@ -4721,7 +4721,7 @@
           "enabled": true,
           "attributes": {
             "name": "Coxsackievirus A16",
-            "reference name": "Coxsackievirus A16 G-10, complete genome.",
+            "reference name": "Coxsackievirus A16",
             "reference accession": "U05876.1"
           },
           "files": {
@@ -4734,13 +4734,17 @@
             "changelog": "CHANGELOG.md"
           },
           "capabilities": {
-            "clades": 7,
+            "clades": 6,
             "qc": [
               "frameShifts",
               "missingData",
               "mixedSites",
               "privateMutations",
-              "stopCodons"
+              "stopCodons",
+              "recombinants"
+            ],
+            "other": [
+              "mutLabels"
             ]
           },
           "versions": [
@@ -4778,13 +4782,18 @@
             "changelog": "CHANGELOG.md"
           },
           "capabilities": {
-            "clades": 8,
+            "clades": 7,
             "qc": [
               "frameShifts",
               "missingData",
               "mixedSites",
               "privateMutations",
-              "stopCodons"
+              "stopCodons",
+              "divergence",
+              "recombinants"
+            ],
+            "other": [
+              "mutLabels"
             ]
           },
           "versions": [
